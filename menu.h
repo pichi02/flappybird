@@ -7,7 +7,6 @@ int options(int width, int heigth, Texture2D menuBackground, Vector2 menuBackgro
 void initMenu();
 void updateMenu();
 void drawMenu();
-void unloadMenu();
 void drawGameOverScreen();
 void drawVictoryScreen();
 void updateGameOverScreen();

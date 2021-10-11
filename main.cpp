@@ -1,14 +1,14 @@
 #include"raylib.h"
 #include"main.h"
 #include"menu.h"
-
+#include"gameplay.h"
 
 Screens currentScreen = MENU;
 int main()
 {
 
 	
-	InitWindow(800, 600, "FLAPPY BIRD");
+	InitWindow(800, 450, "FLAPPY BIRD");
 	SetTargetFPS(60);
 	initMenu();
 		
@@ -23,6 +23,8 @@ int main()
 			drawMenu();
 			break;
 		case GAMEPLAY:
+			updateGameplay();
+			drawGameplay();
 			break;
 		case GAMEOVER:
 			updateGameOverScreen();
