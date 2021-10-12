@@ -1,30 +1,27 @@
 ﻿  gameplay.cpp
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(23,38): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(24,38): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(28,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(29,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(30,32): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(38,76): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(38,57): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(38,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(38,27): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(39,76): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(39,57): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(39,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(39,27): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(46,106): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(46,88): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(46,74): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(46,60): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(46,223): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(46,204): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(46,189): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(46,174): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(70,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(75,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(76,19): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Administrador\Documents\GitHub\flappybird\gameplay.cpp(77,33): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-  main.cpp
-  menu.cpp
-  Generando código...
-  FLAPPY BIRD.vcxproj -> C:\Users\Administrador\Documents\GitHub\flappybird\bin\\Debug\FLAPPY BIRD.exe
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(23,38): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(24,38): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(28,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(29,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(30,32): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(38,76): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(38,57): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(38,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(38,27): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(39,76): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(39,57): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(39,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(39,27): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,106): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,88): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,74): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,60): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,223): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,204): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,189): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,174): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(70,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(75,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(76,19): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(77,33): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  FLAPPY BIRD.vcxproj -> C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\bin\Debug\FLAPPY BIRD.exe

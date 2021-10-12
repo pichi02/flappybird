@@ -68,8 +68,8 @@ void updateObstaclePos()
 {
 	
 	srand(time(NULL));
-	obstacle.r1.x--;
-	obstacle.r2.x--;
+	obstacle.r1.x-=4;
+	obstacle.r2.x-=4;
 	if (obstacle.r1.x < playerPosX - playerSize * 2)
 	{
 		obstacle.r1.x =initialObstaclePosX;
