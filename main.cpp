@@ -34,6 +34,7 @@ int main()
 		case GAMEOVER:
 			updateGameOverScreen();
 			drawGameOverScreen();
+			resetValeus();
 			break;
 		case OPTIONS:
 			break;

@@ -1,14 +1,27 @@
-﻿  menu.cpp
-  raylib.lib(core.obj) : se encontró .netmodule MSIL o un módulo compilado con /GL; reiniciando la vinculación con /LTCG; agregue /LTCG a la línea de comandos de vínculo para mejorar el rendimiento del vinculador
-LINK : warning LNK4075: se omite '/INCREMENTAL' debido a la especificación '/LTCG'
-LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
-  Generando código
-  Generación de código finalizada
-raylib.lib(core.obj) : warning LNK4099: no se encontró PDB 'raylib.pdb' con 'raylib.lib(core.obj)' o en 'C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\bin\Debug\raylib.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
-raylib.lib(shapes.obj) : warning LNK4099: no se encontró PDB 'raylib.pdb' con 'raylib.lib(shapes.obj)' o en 'C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\bin\Debug\raylib.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
-raylib.lib(textures.obj) : warning LNK4099: no se encontró PDB 'raylib.pdb' con 'raylib.lib(textures.obj)' o en 'C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\bin\Debug\raylib.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
-raylib.lib(text.obj) : warning LNK4099: no se encontró PDB 'raylib.pdb' con 'raylib.lib(text.obj)' o en 'C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\bin\Debug\raylib.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
-raylib.lib(raudio.obj) : warning LNK4099: no se encontró PDB 'raylib.pdb' con 'raylib.lib(raudio.obj)' o en 'C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\bin\Debug\raylib.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
-raylib.lib(rglfw.obj) : warning LNK4099: no se encontró PDB 'raylib.pdb' con 'raylib.lib(rglfw.obj)' o en 'C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\bin\Debug\raylib.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
-raylib.lib(utils.obj) : warning LNK4099: no se encontró PDB 'raylib.pdb' con 'raylib.lib(utils.obj)' o en 'C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\bin\Debug\raylib.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
-  FLAPPY BIRD.vcxproj -> C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\bin\Debug\FLAPPY BIRD.exe
+﻿  gameplay.cpp
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(23,38): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(24,38): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(28,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(29,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(30,32): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(38,76): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(38,57): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(38,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(38,27): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(39,76): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(39,57): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(39,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(39,27): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(46,106): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(46,88): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(46,74): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(46,60): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(46,223): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(46,204): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(46,189): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(46,174): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(70,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(75,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(76,19): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Administrador\Desktop\flappybird\gameplay.cpp(77,33): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  FLAPPY BIRD.vcxproj -> C:\Users\Administrador\Desktop\flappybird\bin\\Debug\FLAPPY BIRD.exe
