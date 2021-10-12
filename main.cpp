@@ -3,14 +3,19 @@
 #include"menu.h"
 #include"gameplay.h"
 
+int weigth = 800;
+int height = 450;
 Screens currentScreen = MENU;
+bool gameOver = false;
+
 int main()
 {
 
 	
-	InitWindow(800, 450, "FLAPPY BIRD");
+	InitWindow(weigth, height, "FLAPPY BIRD");
 	SetTargetFPS(60);
 	initMenu();
+	initValeus();
 		
 	while (!WindowShouldClose()&& !getQuit())
 	{

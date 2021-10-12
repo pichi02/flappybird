@@ -107,7 +107,7 @@ void drawMenu()
 		DrawText(TextFormat("quit"), quitButtonX, quitButtonY, 50, WHITE);
 	}
 
-	DrawText(TextFormat("Created by Lucas Pich"), 490, 910, 30, WHITE);
+	DrawText(TextFormat("VERSION 0.1"), (GetScreenWidth()/100)*80, (GetScreenHeight()/100)*95, 20, WHITE);
 
 }
 
@@ -197,6 +197,7 @@ void drawCreditsScreen()
 	DrawTextureEx(menuBackgroundTexture, { 0,0 }, 0, (GetScreenWidth() * 1.0f) / GetScreenWidth(), WHITE);
 	DrawRectangle(mouseX, mouseY, rectangleMouseSize, rectangleMouseSize, BLACK);
 	DrawText(TextFormat("CREDITS"), (GetScreenWidth() / 100) * 35, (GetScreenHeight() / 100) * 15, 50, WHITE);
+	DrawText(TextFormat("VERSION 0.1"), (GetScreenWidth() / 100) * 80, (GetScreenHeight() / 100) * 95, 20, WHITE);
 	
 	if (collision(mouseX, mouseY, rectangleMouseSize, victoryBackButtonX, quitButtonY, backMenuButtonWidth, buttonSizeY))
 	{
