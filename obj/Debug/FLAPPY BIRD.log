@@ -20,8 +20,10 @@ C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,223):
 C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,204): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
 C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,189): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
 C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(46,174): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(70,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(75,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(76,19): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(77,33): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(74,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(79,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(80,19): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\gameplay.cpp(81,33): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  main.cpp
+  Generando código...
   FLAPPY BIRD.vcxproj -> C:\Users\lucas\Documents\Facultad\Desarrollo 1\FLAPPY BIRD\bin\Debug\FLAPPY BIRD.exe

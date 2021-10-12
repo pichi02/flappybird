@@ -24,6 +24,7 @@ int main()
 		switch (currentScreen)
 		{
 		case MENU:
+			resetValeus();
 			updateMenu();
 			drawMenu();
 			break;

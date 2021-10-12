@@ -49,6 +49,10 @@ void updateGameplay()
 		currentScreen = GAMEOVER;
 		
 	}
+	if (IsKeyPressed(KEY_M))
+	{
+		currentScreen = MENU;
+	}
 	
 }
 
