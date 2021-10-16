@@ -2,17 +2,17 @@
 #include"raylib.h"
 #include <iostream>
 #include<time.h>
+#include"Parallax.h"
 
+using namespace parallax;
 
 int playerSize;
 int playerPosX;
 int playerPosY;
 int initialObstaclePosX;
+bool isParallaxInited = false;
 OBSTACLE obstacle;
-int obstaclePosX;
-int obstaclePosY;
-int obstacleWidth;
-int obstacleHeight;
+
 
 void initValeus() 
 {
@@ -24,28 +24,40 @@ void initValeus()
 	obstacle.r2.height = GetScreenHeight();
 	obstacle.r1.width = 50;
 	obstacle.r2.width = 50;
-	initialObstaclePosX = GetScreenWidth() / 2 - obstacleWidth / 2;
+	initialObstaclePosX = GetScreenWidth()  - obstacle.r1.width ;
 	obstacle.r1.x = initialObstaclePosX;
 	obstacle.r2.x = initialObstaclePosX;
 	obstacle.r1.y = GetRandomValue(playerSize, GetScreenHeight());
 	obstacle.r2.y = obstacle.r1.y - obstacle.r1.height-playerSize*2;
 	gameOver = false;
+	if (!isParallaxInited)
+	{
+		InitParallax();
+		isParallaxInited = true;
+	}
+	
+	
 }
 void drawGameplay()
 {
 	ClearBackground(BLACK);
+	DrawParallax();
 	DrawRectangle(playerPosX, playerPosY, playerSize, playerSize, WHITE);
 	DrawRectangle(obstacle.r1.x, obstacle.r1.y, obstacle.r1.width, obstacle.r1.height,WHITE);
 	DrawRectangle(obstacle.r2.x, obstacle.r2.y, obstacle.r2.width, obstacle.r2.height, WHITE);
+	
 }
 
 void updateGameplay()
 {
+	UpdateParallax();
 	movePlayer();
 	updateObstaclePos();
 	if (Collision(playerPosX,playerPosY,playerSize,obstacle.r1.x,obstacle.r1.y,obstacle.r1.width,obstacle.r1.height)|| Collision(playerPosX, playerPosY, playerSize, obstacle.r2.x, obstacle.r2.y, obstacle.r2.width, obstacle.r2.height))
 	{
 		gameOver = true;
+		DeInitParallax();
+		isParallaxInited = false;
 		currentScreen = GAMEOVER;
 		
 	}
@@ -53,6 +65,7 @@ void updateGameplay()
 	{
 		currentScreen = MENU;
 	}
+	
 	
 }
 

@@ -2,9 +2,11 @@
 #include"main.h"
 #include"menu.h"
 #include"gameplay.h"
+#include "Parallax.h"
 
+using namespace parallax;
 int weigth = 800;
-int height = 450;
+int height = 600;
 Screens currentScreen = MENU;
 bool gameOver = false;
 
