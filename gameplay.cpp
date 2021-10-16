@@ -7,10 +7,13 @@
 using namespace parallax;
 
 int playerSize;
-int playerPosX;
-int playerPosY;
-int initialObstaclePosX;
+float playerPosX;
+float playerPosY;
+float accel;
+float initialObstaclePosX;
 bool isParallaxInited = false;
+float gravity;
+float flappingForce;
 OBSTACLE obstacle;
 
 
@@ -18,8 +21,11 @@ void initValeus()
 {
 	
 	playerSize = 30;
-	playerPosX = 30;
-	playerPosY = 300;
+	playerPosX = 30.0f;
+	playerPosY = 300.0f;
+	gravity = 3.0f;
+	accel = 0;
+	flappingForce = 6.0f;
 	obstacle.r1.height = GetScreenHeight();
 	obstacle.r2.height = GetScreenHeight();
 	obstacle.r1.width = 50;
@@ -28,7 +34,7 @@ void initValeus()
 	obstacle.r1.x = initialObstaclePosX;
 	obstacle.r2.x = initialObstaclePosX;
 	obstacle.r1.y = GetRandomValue(playerSize, GetScreenHeight());
-	obstacle.r2.y = obstacle.r1.y - obstacle.r1.height-playerSize*2;
+	obstacle.r2.y = obstacle.r1.y - obstacle.r1.height-playerSize*4;
 	gameOver = false;
 	if (!isParallaxInited)
 	{
@@ -53,6 +59,14 @@ void updateGameplay()
 	UpdateParallax();
 	movePlayer();
 	updateObstaclePos();
+	if (IsKeyDown(KEY_SPACE))
+	{
+		accel = -flappingForce;
+	}
+	else
+	{
+		accel =  gravity;
+	}
 	if (Collision(playerPosX,playerPosY,playerSize,obstacle.r1.x,obstacle.r1.y,obstacle.r1.width,obstacle.r1.height)|| Collision(playerPosX, playerPosY, playerSize, obstacle.r2.x, obstacle.r2.y, obstacle.r2.width, obstacle.r2.height))
 	{
 		gameOver = true;
@@ -71,14 +85,7 @@ void updateGameplay()
 
 void movePlayer()
 {
-	if (IsKeyDown(KEY_DOWN))
-	{
-		playerPosY += 5;
-	}
-	if (IsKeyDown(KEY_UP))
-	{
-		playerPosY -= 5;
-	}
+	playerPosY += accel;
 }
 
 void updateObstaclePos()
@@ -92,7 +99,7 @@ void updateObstaclePos()
 		obstacle.r1.x =initialObstaclePosX;
 		obstacle.r2.x = initialObstaclePosX;
 		obstacle.r1.y = GetRandomValue(playerSize,GetScreenHeight());
-		obstacle.r2.y = obstacle.r1.y - obstacle.r1.height - playerSize * 2;
+		obstacle.r2.y = obstacle.r1.y - obstacle.r1.height - playerSize * 4;
 	}
 	
 }
