@@ -13,5 +13,5 @@ void updateGameplay();
 void initValeus();
 void movePlayer();
 void updateObstaclePos();
-bool Collision(int mouseX, int mouseY, int mouseCollider, int ballX, int ballY, int ballSizeX, int ballSizeY);
+bool Collision(int birdX, int birdY, int birdSize, int rectangleX, int rectangleY, int rectangleWidth, int rectangleHeight);
 void resetValeus();

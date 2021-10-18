@@ -6,12 +6,22 @@
 
 using namespace parallax;
 
+Image birdImage1;
+Image birdImage2;
+Texture2D birdTexture;
+Rectangle sourceRecBird;
+Rectangle destRecBird;
+Vector2 playerOrigin;
 int playerSize;
 float playerPosX;
 float playerPosY;
 float accel;
 float initialObstaclePosX;
 bool isParallaxInited = false;
+bool areTexturesInited = false;
+bool isTexture1Updated = true;
+bool isTexture2Updated = false;
+
 float gravity;
 float flappingForce;
 OBSTACLE obstacle;
@@ -20,7 +30,11 @@ OBSTACLE obstacle;
 void initValeus() 
 {
 	
-	playerSize = 30;
+	
+	sourceRecBird = { 0.0f, 0.0f, (float)birdTexture.width , (float)birdTexture.height };
+	destRecBird= { playerPosX, playerPosY, (float)birdTexture.width/3, (float)birdTexture.height };
+	playerOrigin= { ((float)birdTexture.width/14 ) / 2, (float)birdTexture.height / 2.7f };
+	playerSize = 40;
 	playerPosX = 30.0f;
 	playerPosY = 300.0f;
 	gravity = 3.0f;
@@ -41,37 +55,64 @@ void initValeus()
 		InitParallax();
 		isParallaxInited = true;
 	}
+	if (!areTexturesInited)
+	{
+		birdImage1 = LoadImage("res/bird2.png");
+		birdImage2 = LoadImage("res/bird1.png");
+		birdTexture = LoadTextureFromImage(birdImage1);
+		areTexturesInited = true;
+	}
 	
 	
 }
 void drawGameplay()
 {
 	ClearBackground(BLACK);
+	DrawRectangle(playerPosX, playerPosY, playerSize, playerSize, RAYWHITE);
 	DrawParallax();
-	DrawRectangle(playerPosX, playerPosY, playerSize, playerSize, WHITE);
+	
 	DrawRectangle(obstacle.r1.x, obstacle.r1.y, obstacle.r1.width, obstacle.r1.height,WHITE);
 	DrawRectangle(obstacle.r2.x, obstacle.r2.y, obstacle.r2.width, obstacle.r2.height, WHITE);
+	DrawTexturePro(birdTexture, sourceRecBird, destRecBird, playerOrigin, 0, RAYWHITE);
+
 	
 }
 
 void updateGameplay()
 {
+
 	UpdateParallax();
 	movePlayer();
 	updateObstaclePos();
 	if (IsKeyDown(KEY_SPACE))
 	{
 		accel = -flappingForce;
+		if (!isTexture1Updated)
+		{ 
+			birdTexture = LoadTextureFromImage(birdImage1);
+			isTexture1Updated = true;
+			isTexture2Updated = false;
+		}
+		
 	}
 	else
 	{
+		
 		accel =  gravity;
+		if (!isTexture2Updated)
+		{
+			birdTexture = LoadTextureFromImage(birdImage2);
+			isTexture2Updated = true;
+			isTexture1Updated = false;
+		}
+		
 	}
 	if (Collision(playerPosX,playerPosY,playerSize,obstacle.r1.x,obstacle.r1.y,obstacle.r1.width,obstacle.r1.height)|| Collision(playerPosX, playerPosY, playerSize, obstacle.r2.x, obstacle.r2.y, obstacle.r2.width, obstacle.r2.height))
 	{
 		gameOver = true;
 		DeInitParallax();
 		isParallaxInited = false;
+		areTexturesInited = false;
 		currentScreen = GAMEOVER;
 		
 	}
@@ -80,7 +121,7 @@ void updateGameplay()
 		currentScreen = MENU;
 	}
 	
-	
+	destRecBird = { playerPosX,playerPosY, (float)birdTexture.width / 3, (float)birdTexture.height };
 }
 
 void movePlayer()
@@ -103,17 +144,9 @@ void updateObstaclePos()
 	}
 	
 }
-bool Collision(int mouseX, int mouseY, int mouseCollider, int ballX, int ballY, int ballSizeX, int ballSizeY)
+bool Collision(int birdX, int birdY, int birdSize, int rectangleX, int rectangleY, int rectangleWidth, int rectangleHeight)
 {
-	if (mouseX <= ballX + ballSizeX && ballX <= mouseX + mouseCollider && mouseY <= ballY + ballSizeY && ballY <= mouseY + mouseCollider)
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-	
+	return (birdX <= rectangleX + rectangleWidth && rectangleX <= birdX + birdSize && birdY <= rectangleY + rectangleHeight && rectangleY <= birdY + birdSize);
 }
 void resetValeus()
 {
